@@ -33,30 +33,9 @@ a {
 }
 
 input {
-    border: solid 1px rgb(227, 227, 227);
-    border-bottom: solid 1.5px rgb(208, 208, 208);
-    border-radius: 5px;
     font-size: 1rem;
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
     outline: none;
-}
- 
-input:focus {
-    border-bottom: solid 3px var(--color-secundario);
-}
-
-textarea {
-    resize: none;
-    border: solid 1px rgb(227, 227, 227);
-    border-bottom: solid 1.5px rgb(208, 208, 208);
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 1rem 0 0 0.5rem;
-    outline: none;
-}
-
-textarea:focus {
-    border-bottom: solid 3px var(--color-secundario);
 }
 
 /* Sección Cabecera */
@@ -158,10 +137,19 @@ textarea:focus {
 .formulario_input {
     width: 392px;
     height: 3rem;
-    border: #03318c solid 3px;
+    border: var(--color-cinco) solid 3px;
     border-radius: 30px;
     font-family: var(--fuente-IBM);
     color: var(--color-cinco);
+}
+
+.formulario_input::placeholder {
+    color: var(--color-cinco);
+}
+
+.formulario_input:focus {
+    outline: none;
+    border: var(--color-cinco) solid 3px;
 }
 
 .formulario__botones {
