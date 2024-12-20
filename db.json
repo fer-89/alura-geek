@@ -1,0 +1,22 @@
+{
+    "productos": [
+        {
+            "nombre": "Captain America",
+            "precio": "$10",
+            "imagen": "https://www.hasbro.com/common/productimages/en_US/5B944B6714784283B3A873B365362473/00db7b128fa2b2a650824d166856636bed2a33f5.jpg",
+            "id": 1
+        },
+        {
+            "nombre": "Gameboy advance SP",
+            "precio": "$100",
+            "imagen": "https://m.media-amazon.com/images/I/61Vit8rtD1L.jpg",
+            "id": 2
+        },
+        {
+            "nombre": "Spiderman",
+            "precio": "$12",
+            "imagen": "https://images.bigbadtoystore.com/images/p/full/2023/06/e0e7d3f7-672f-424c-9009-d64d9bd57bab.jpg",
+            "id": 3
+        }
+    ]
+}
