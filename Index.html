@@ -35,10 +35,10 @@
         </section>
         <section class="formulario">
             <h1 class="main__titulos">AGREGAR PRODUCTO:</h1>
-            <form class="formulario_form">
-                <input type="text" class="formulario_input" name="nombre" placeholder="Nombre...">
-                <input type="text" class="formulario_input" name="precio" placeholder="Precio...">
-                <input type="text" class="formulario_input" name="imagen" placeholder="Imagen...">
+            <form class="formulario_form" data-formulario>
+                <input type="text" class="formulario_input" data-nombre name="nombre" placeholder="Nombre...">
+                <input type="text" class="formulario_input" data-precio name="precio" placeholder="Precio...">
+                <input type="text" class="formulario_input" data-imagen name="imagen" placeholder="Imagen...">
                 <div class="formulario__botones">
                     <input type="submit" value="Enviar" class="formulario_botones__enviar">
                     <button class="formulario_botones__limpiar">Limpiar</button>
@@ -52,5 +52,6 @@
         <p class="footer__copyright">ALURA LATAM <script>document.write(new Date().getFullYear())</script></p>
     </footer>
     <script src="./js/mostrarProductos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
 </body>
 </html>

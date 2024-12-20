@@ -89,7 +89,7 @@ input {
 
 .productos__lista__elemento {
     height: 258px;
-    width: 196px;
+    width: 25%;
     border: #111111 3px solid;
     border-radius: 10px;
     padding: 10px;
@@ -102,8 +102,8 @@ input {
 }
 
 .productos__lista__elemento__imagen {
-    width: 185px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border: #111111 3px solid;
 }
 
@@ -113,7 +113,7 @@ input {
 
 .productos__lista__elemento__detalles {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 

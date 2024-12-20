@@ -19,7 +19,7 @@ export default function crearCard(nombre, precio, imagen, id) {
 async function listarProductos() {
     try{
         const listaAPI = await conexionAPI.listarProductos();
-        console.log(listaAPI);
+        // console.log(listaAPI);
         listaAPI.forEach(producto => {
             listaProductos.appendChild(crearCard(producto.nombre, producto.precio, producto.imagen, producto.id))
         });
