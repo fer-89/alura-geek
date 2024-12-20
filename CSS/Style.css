@@ -118,6 +118,14 @@ textarea:focus {
     background-color: var(--color-cuatro);
     color: var(--color-de-fondo);
     font-family: var(--fuente-IBM);
+    display: flex;
+    flex-direction: column;
+}
+
+.productos__lista__elemento__imagen {
+    width: 185px;
+    height: 180px;
+    border: #111111 3px solid;
 }
 
 .productos__lista__elemento__titulo {
@@ -125,7 +133,7 @@ textarea:focus {
 }
 
 .productos__lista__elemento__detalles {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 }
