@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/Reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Press Start 2P font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- IBM Plex mono font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Assets/icon__heart.png">
+</head>
+<body>
+    <header class="cabecera">
+        <img class="cabecera__logo" src="./Assets/Logo.png" alt="Logo Alura Geek">
+    </header>
+    <main class="main">
+        <section class="productos">
+                <h1 class="main__titulos">MIS PRODUCTOS:</h1>
+                <li class="productos__lista">
+                    <ul class="productos__lista__elemento">
+                        <img class="productos__lista__elemento__imagen" src="./Assets/stormtrooper.png" alt="Producto">
+                        <p class="productos__lista__elemento__titulo">Stormtrooper</p>
+                        <div class="productos__lista__elemento__detalles">
+                            <p>$0.00</p>
+                            <img class="" src="./Assets/icon_trash.png" alt="Botón eliminar">
+                        </div>
+                    </ul>
+                </li>
+        </section>
+        <section class="formulario">
+            <h1 class="main__titulos">AGREGAR PRODUCTO:</h1>
+            <form class="formulario_form">
+                <input type="text" class="formulario_input" name="nombre" value="Nombre...">
+                <input type="text" class="formulario_input" name="precio" value="Precio...">
+                <input type="text" class="formulario_input" name="imagen" value="Imagen...">
+                <div class="formulario__botones">
+                    <input type="submit" value="Enviar" class="formulario_botones__enviar">
+                    <button class="formulario_botones__limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="cabecera__logo" src="./Assets/Logo.png" alt="Logo Alura Geek">
+        <p class="footer__creditos">DESARROLLADO POR FERNANDO JIMENEZ</p>
+        <p class="footer__copyright">ALURA LATAM <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+    <!-- <script src="./js/mostrarVideos.js" type="module"></script> -->
+</body>
+</html>

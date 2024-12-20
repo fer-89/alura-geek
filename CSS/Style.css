@@ -1,0 +1,208 @@
+:root {
+    --color-de-fondo: #ffffff;
+    --color-principal: #8c0375;
+    --color-secundario: #c004d9;
+    --color-tres: #9309a6;
+    --color-cuatro: #5d04d9;
+    --color-cinco: #03318c;
+    --color-de-link: #111111;
+    --fuente-IBM:'IBM Plex Mono';
+    --fuente-Press-Start:'Press Start 2P';
+}
+
+body {
+    font-family: 'IBM Plex Mono';
+    background-color: var(--color-de-fondo);
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    font-size: 0.85rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+input {
+    border: solid 1px rgb(227, 227, 227);
+    border-bottom: solid 1.5px rgb(208, 208, 208);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+ 
+input:focus {
+    border-bottom: solid 3px var(--color-secundario);
+}
+
+textarea {
+    resize: none;
+    border: solid 1px rgb(227, 227, 227);
+    border-bottom: solid 1.5px rgb(208, 208, 208);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1rem 0 0 0.5rem;
+    outline: none;
+}
+
+textarea:focus {
+    border-bottom: solid 3px var(--color-secundario);
+}
+
+/* Sección Cabecera */
+
+.cabecera {
+    background-color: var(--color-cuatro);
+    height: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera__logo {
+    max-width: 20rem;
+}
+
+/* Sección Main */
+
+.main {
+    display: flex;
+    padding: 3% 10% 3% 10%;
+    justify-content: space-between;
+}
+
+.main__titulos {
+    font-family: var(--fuente-Press-Start);
+    padding: 0 0 2rem 0;
+ }
+
+ /* Sección Productos */
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 55%;
+    align-items: center;
+}
+
+.productos__lista {
+    border: 1px solid#888888;
+    width: 90%;
+    height: 50vh;
+    padding: 15px 4rem 15px 15px;
+    box-shadow: 5px 10px #888888;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.productos__lista__elemento {
+    height: 258px;
+    width: 196px;
+    border: #111111 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3rem;
+    background-color: var(--color-cuatro);
+    color: var(--color-de-fondo);
+    font-family: var(--fuente-IBM);
+}
+
+.productos__lista__elemento__titulo {
+    padding: 10px 0 10px 0;
+}
+
+.productos__lista__elemento__detalles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sección Formulario */
+
+.formulario {
+    width: 30%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.formulario_input {
+    width: 392px;
+    height: 3rem;
+    border: #03318c solid 3px;
+    border-radius: 30px;
+    font-family: var(--fuente-IBM);
+    color: var(--color-cinco);
+}
+
+.formulario__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario_botones__enviar {
+    width: 45%;
+    height: 3rem;
+    border: #03318c solid 3px;
+    border-radius: 30px;
+    background-color: var(--color-cinco);
+    font-family: var(--fuente-IBM);
+    color: var(--color-de-fondo);
+}
+
+.formulario_botones__limpiar {
+    width: 45%;
+    height: 3rem;
+    border: #03318c solid 3px;
+    border-radius: 30px;
+    font-family: var(--fuente-IBM);
+    color: var(--color-cinco);
+}
+
+/* Sección Footer */
+
+.footer {
+    font-family: var(--fuente-IBM);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-cuatro);
+    color: var(--color-de-fondo);
+    height: 10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer__creditos {
+    font-weight:400;
+    padding: 0.5rem;
+}
+.footer__copyright {
+    font-weight: 100;
+}
