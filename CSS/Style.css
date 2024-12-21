@@ -113,7 +113,7 @@ input {
 
 .productos__lista__elemento__detalles {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -124,7 +124,6 @@ input {
     height: 70rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .formulario_form {

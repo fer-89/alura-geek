@@ -10,16 +10,30 @@ export default function crearCard(nombre, precio, imagen, id) {
                             <p class="productos__lista__elemento__titulo">${nombre}</p>
                             <div class="productos__lista__elemento__detalles">
                                 <p>$${precio}</p>
-                                <img class="" src="./Assets/icon_trash.png" alt="Botón eliminar">
+                                <img class="productos_lista_boton_eliminar" id="${(id)}"  src="./Assets/icon_trash.png" alt="Botón eliminar">
                             </div>
                          `;
+    agregarEliminarEvento(producto, id);
+    
     return producto;
+}
+
+function agregarEliminarEvento(producto, id) {
+    const botonBorrar = producto.querySelector(".productos_lista_boton_eliminar");
+    botonBorrar.addEventListener("click", async () => {
+        try {
+            await conexionAPI.eliminarProducto(id);
+            producto.remove();
+            alert(`Producto eliminado`);
+        } catch (error) {
+            alert(error);
+        }
+    });
 }
 
 async function listarProductos() {
     try{
         const listaAPI = await conexionAPI.listarProductos();
-        // console.log(listaAPI);
         listaAPI.forEach(producto => {
             listaProductos.appendChild(crearCard(producto.nombre, producto.precio, producto.imagen, producto.id))
         });
