@@ -5,7 +5,7 @@ async function listarProductos() {
     return conexionConvertida;
 }
 //crea una funcion para enviar un producto a la API llamada enviarProducto
-async function enviarProducto(nombre, precio, imagen, id) {
+async function enviarProducto(nombre, precio, imagen) {
     const conexion = await fetch("http://localhost:3001/productos", {
         method: "POST",
         headers: {
@@ -14,8 +14,7 @@ async function enviarProducto(nombre, precio, imagen, id) {
         body: JSON.stringify({ 
             nombre:nombre, 
             precio:precio, 
-            imagen:imagen, 
-            id:id
+            imagen:imagen
         })
     });
     const conexionConvertida = conexion.json();

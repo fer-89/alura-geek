@@ -6,9 +6,7 @@ async function crearProducto(evento) {
     const precio = document.querySelector("[data-precio]").value;
     const imagen = document.querySelector("[data-imagen]").value;
     try{
-        //crea un id basado en el ultimo id de producto de la API
-        const id = ((await conexionAPI.listarProductos()).length + 1).toString();
-        await conexionAPI.enviarProducto(nombre, precio, imagen, id);
+        await conexionAPI.enviarProducto(nombre, precio, imagen);
     }catch(e){
         alert(e);
     }
