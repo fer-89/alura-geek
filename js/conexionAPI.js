@@ -1,12 +1,12 @@
 async function listarProductos() {
-    const conexion = await fetch("http://localhost:3001/productos");
+    const conexion = await fetch("https://my-json-server.typicode.com/fer-89/alura-geek-api/productos");
     const conexionConvertida = conexion.json();
     //console.log(conexionConvertida);
     return conexionConvertida;
 }
 //crea una funcion para enviar un producto a la API llamada enviarProducto
 async function enviarProducto(nombre, precio, imagen) {
-    const conexion = await fetch("http://localhost:3001/productos", {
+    const conexion = await fetch("https://my-json-server.typicode.com/fer-89/alura-geek-api/productos", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -27,7 +27,7 @@ async function enviarProducto(nombre, precio, imagen) {
 }
 
 async function eliminarProducto(id) {
-    const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+    const conexion = await fetch(`https://my-json-server.typicode.com/fer-89/alura-geek-api/productos/${id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json",
